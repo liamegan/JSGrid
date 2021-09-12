@@ -1,5 +1,5 @@
 {
-  "name": "le-grid",
+  "name": "le-jsgrid",
   "version": "0.0.1",
   "description": "A simple grid system for javascript",
   "source": "src/index.ts",
