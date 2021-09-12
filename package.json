@@ -1,0 +1,49 @@
+{
+  "name": "le-grid",
+  "version": "0.0.1",
+  "description": "A simple grid system for javascript",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "exports": {
+    ".": "./dist/index.modern.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist; npx microbundle",
+    "dev": "microbundle watch",
+    "prepare": "husky install; npm run build",
+    "document": "npx typedoc src/index.ts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamegan/JSGrid.git"
+  },
+  "author": "Liam Egan <liam@wethecollective.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liamegan/JSGrid/issues"
+  },
+  "homepage": "https://github.com/liamegan/JSGrid#readme",
+  "devDependencies": {
+    "husky": "^7.0.2",
+    "microbundle": "^0.13.3",
+    "prettier": "^2.4.0",
+    "typedoc": "^0.22.3",
+    "typescript": "^4.4.3"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 80
+  },
+  "dependencies": {
+    "wtc-math": "^1.0.13"
+  }
+}
